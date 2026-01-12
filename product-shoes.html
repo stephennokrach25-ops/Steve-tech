@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Techs - Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="product-items-container">
+        <a href="products.html" class="back-button">← Back to Products</a>
+        
+        <div class="products-header">
+            <h1 class="products-title">Shoes Collection</h1>
+            <p class="products-subtitle">Durable and fashionable footwear for every step</p>
+        </div>
+        
+        <div class="items-grid">
+            <div class="item-card">
+                <div class="item-image">👟</div>
+                <h3 class="item-name">Running Sneakers</h3>
+                <p class="item-price">$79.99</p>
+                <button class="buy-button" onclick="buyItem('Running Sneakers', 79.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">👞</div>
+                <h3 class="item-name">Leather Dress Shoes</h3>
+                <p class="item-price">$89.99</p>
+                <button class="buy-button" onclick="buyItem('Leather Dress Shoes', 89.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">👟</div>
+                <h3 class="item-name">Casual Canvas Shoes</h3>
+                <p class="item-price">$34.99</p>
+                <button class="buy-button" onclick="buyItem('Casual Canvas Shoes', 34.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">👟</div>
+                <h3 class="item-name">High-Top Sneakers</h3>
+                <p class="item-price">$64.99</p>
+                <button class="buy-button" onclick="buyItem('High-Top Sneakers', 64.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">👞</div>
+                <h3 class="item-name">Loafers</h3>
+                <p class="item-price">$54.99</p>
+                <button class="buy-button" onclick="buyItem('Loafers', 54.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">👟</div>
+                <h3 class="item-name">Athletic Shoes</h3>
+                <p class="item-price">$69.99</p>
+                <button class="buy-button" onclick="buyItem('Athletic Shoes', 69.99)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function buyItem(name, price) {
+            alert(`Thank you for your interest in ${name}!\nPrice: $${price}\n\nThis is a demo store. In a real application, this would process your payment.`);
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Techs - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="products-container">
+        <div class="products-header">
+            <h1 class="products-title">Our Products</h1>
+            <p class="products-subtitle">Choose from our wide range of quality items</p>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card" onclick="goToProduct('shirts')">
+                <div class="product-icon">👕</div>
+                <div class="product-info">
+                    <h3>Shirts</h3>
+                    <p>Premium quality shirts for all occasions</p>
+                </div>
+                <div class="arrow">→</div>
+            </div>
+            
+            <div class="product-card" onclick="goToProduct('trousers')">
+                <div class="product-icon">👖</div>
+                <div class="product-info">
+                    <h3>Trousers</h3>
+                    <p>Comfortable and stylish trousers</p>
+                </div>
+                <div class="arrow">→</div>
+            </div>
+            
+            <div class="product-card" onclick="goToProduct('shoes')">
+                <div class="product-icon">👟</div>
+                <div class="product-info">
+                    <h3>Shoes</h3>
+                    <p>Durable and fashionable footwear</p>
+                </div>
+                <div class="arrow">→</div>
+            </div>
+            
+            <div class="product-card" onclick="goToProduct('stockings')">
+                <div class="product-icon">🧦</div>
+                <div class="product-info">
+                    <h3>Stockings</h3>
+                    <p>Soft and comfortable stockings</p>
+                </div>
+                <div class="arrow">→</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is logged in
+        window.addEventListener('load', function() {
+            const isLoggedIn = localStorage.getItem('steveTechs_loggedIn');
+            if (!isLoggedIn) {
+                alert('Please log in to view products');
+                window.location.href = 'login.html';
+            }
+        });
+
+        function goToProduct(category) {
+            window.location.href = `product-${category}.html`;
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Techs - Stockings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="product-items-container">
+        <a href="products.html" class="back-button">← Back to Products</a>
+        
+        <div class="products-header">
+            <h1 class="products-title">Stockings Collection</h1>
+            <p class="products-subtitle">Soft and comfortable stockings for every need</p>
+        </div>
+        
+        <div class="items-grid">
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">Cotton Ankle Socks</h3>
+                <p class="item-price">$8.99</p>
+                <button class="buy-button" onclick="buyItem('Cotton Ankle Socks', 8.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">Wool Crew Socks</h3>
+                <p class="item-price">$12.99</p>
+                <button class="buy-button" onclick="buyItem('Wool Crew Socks', 12.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">Athletic Socks</h3>
+                <p class="item-price">$9.99</p>
+                <button class="buy-button" onclick="buyItem('Athletic Socks', 9.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">Dress Socks</h3>
+                <p class="item-price">$11.99</p>
+                <button class="buy-button" onclick="buyItem('Dress Socks', 11.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">Compression Socks</h3>
+                <p class="item-price">$15.99</p>
+                <button class="buy-button" onclick="buyItem('Compression Socks', 15.99)">Buy Now</button>
+            </div>
+            
+            <div class="item-card">
+                <div class="item-image">🧦</div>
+                <h3 class="item-name">No-Show Socks</h3>
+                <p class="item-price">$7.99</p>
+                <button class="buy-button" onclick="buyItem('No-Show Socks', 7.99)">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function buyItem(name, price) {
+            alert(`Thank you for your interest in ${name}!\nPrice: $${price}\n\nThis is a demo store. In a real application, this would process your payment.`);
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Techs - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="landing-container">
+        <div class="logo-section">
+            <div class="big-c">C</div>
+            <div class="company-name">Noki Tech</div>
+        </div>
+        
+        <div class="action-section">
+            <p class="purchase-text">To purchase, log in or sign in</p>
+            <div class="auth-buttons">
+                <button onclick="goToLogin()" class="btn btn-primary">Log In</button>
+                <button onclick="goToSignup()" class="btn btn-secondary">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goToLogin() {
+            window.location.href = 'login.html';
+        }
+        
+        function goToSignup() {
+            window.location.href = 'signup.html';
+        }
+    </script>
+</body>
+</html>
+
